@@ -1,0 +1,14 @@
+C:\Users\dzhem\source\repos\TechnoraApi\TechnoraApi\bin\Debug\netcoreapp2.2\TechnoraApi.deps.json
+C:\Users\dzhem\source\repos\TechnoraApi\TechnoraApi\bin\Debug\netcoreapp2.2\TechnoraApi.runtimeconfig.json
+C:\Users\dzhem\source\repos\TechnoraApi\TechnoraApi\bin\Debug\netcoreapp2.2\TechnoraApi.runtimeconfig.dev.json
+C:\Users\dzhem\source\repos\TechnoraApi\TechnoraApi\bin\Debug\netcoreapp2.2\TechnoraApi.dll
+C:\Users\dzhem\source\repos\TechnoraApi\TechnoraApi\obj\Debug\netcoreapp2.2\TechnoraApi.csprojAssemblyReference.cache
+C:\Users\dzhem\source\repos\TechnoraApi\TechnoraApi\obj\Debug\netcoreapp2.2\TechnoraApi.csproj.CoreCompileInputs.cache
+C:\Users\dzhem\source\repos\TechnoraApi\TechnoraApi\obj\Debug\netcoreapp2.2\TechnoraApi.RazorAssemblyInfo.cache
+C:\Users\dzhem\source\repos\TechnoraApi\TechnoraApi\obj\Debug\netcoreapp2.2\TechnoraApi.RazorAssemblyInfo.cs
+C:\Users\dzhem\source\repos\TechnoraApi\TechnoraApi\obj\Debug\netcoreapp2.2\TechnoraApi.AssemblyInfoInputs.cache
+C:\Users\dzhem\source\repos\TechnoraApi\TechnoraApi\obj\Debug\netcoreapp2.2\TechnoraApi.AssemblyInfo.cs
+C:\Users\dzhem\source\repos\TechnoraApi\TechnoraApi\obj\Debug\netcoreapp2.2\TechnoraApi.RazorTargetAssemblyInfo.cache
+C:\Users\dzhem\source\repos\TechnoraApi\TechnoraApi\bin\Debug\netcoreapp2.2\TechnoraApi.pdb
+C:\Users\dzhem\source\repos\TechnoraApi\TechnoraApi\obj\Debug\netcoreapp2.2\TechnoraApi.dll
+C:\Users\dzhem\source\repos\TechnoraApi\TechnoraApi\obj\Debug\netcoreapp2.2\TechnoraApi.pdb
