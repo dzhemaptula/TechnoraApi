@@ -41,9 +41,9 @@ namespace TechnoraApi.Data
 
             builder.Entity<Specification>().HasData(
                     //Shadow property can be used for the foreign key, in combination with anaonymous objects
-                    new { Id = 1, Name = "64GB", ProductId = 1 },
-                    new { Id = 2, Name = "White", ProductId = 1 },
-                    new { Id = 3, Name = "6 inch retina display", ProductId = 1 }
+                    new { Id = 1, Description = "64GB", ProductId = 1 },
+                    new { Id = 2, Description = "White", ProductId = 1 },
+                    new { Id = 3, Description = "6 inch retina display", ProductId = 1 }
                  );
         }
 

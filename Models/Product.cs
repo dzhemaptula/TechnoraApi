@@ -14,9 +14,7 @@ namespace TechnoraApi.Models
         public string Name { get; set; }
 
         public DateTime Created { get; set; }
-
-        public string Chef { get; set; }
-
+         
         public ICollection<Specification> Specifications { get; private set; }
         #endregion
 

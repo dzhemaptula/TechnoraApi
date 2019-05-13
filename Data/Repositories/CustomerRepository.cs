@@ -17,7 +17,7 @@ namespace TechnoraApi.Data.Repositories
 
         public Customer GetBy(string email)
         {
-            return _customers.Include(c => c.ItemsForSale).ThenInclude(f => f.Product).ThenInclude(r => r.Specifications).SingleOrDefault(c => c.Email == email);
+            return _customers.Include(c => c.Items).ThenInclude(f => f.Product).ThenInclude(r => r.Specifications).SingleOrDefault(c => c.Email == email);
         }
 
         public void Add(Customer customer)

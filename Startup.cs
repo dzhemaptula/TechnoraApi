@@ -122,7 +122,7 @@ namespace TechnoraApi
             app.UseSwaggerUi3();
             app.UseSwagger();
 
-            productDataInitializer.InitializeData().Wait();
+            //productDataInitializer.InitializeData().Wait();
         }
     }
 }
