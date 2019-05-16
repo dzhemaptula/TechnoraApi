@@ -31,6 +31,7 @@ namespace TechnoraApi.Controllers
 
 
         [HttpGet("{id}")]
+        [AllowAnonymous]
         public ActionResult<Product> GetProduct(int id)
         {
             Product product = _productRepository.GetBy(id);
@@ -39,11 +40,12 @@ namespace TechnoraApi.Controllers
         }
 
         [HttpPost]
+        [AllowAnonymous]
         public ActionResult<Product> PostProduct(ProductDTO product)
         {
-            Product productToCreate = new Product() { Name = product.Name };
+            Product productToCreate = new Product() { Name = product.Name, Price = product.Price };
             foreach (var i in product.Specifications)
-                productToCreate.AddSpecification(new Specification(i.description));
+                productToCreate.AddSpecification(new Specification(i.description) { Type=i.Type});
             _productRepository.Add(productToCreate);
             _productRepository.SaveChanges();
 
@@ -51,6 +53,7 @@ namespace TechnoraApi.Controllers
         }
 
         [HttpPut("{id}")]
+        [AllowAnonymous]
         public IActionResult PutProduct(int id, Product product)
         {
             if (id != product.Id)
@@ -64,6 +67,7 @@ namespace TechnoraApi.Controllers
 
 
         [HttpDelete("{id}")]
+        [AllowAnonymous]
         public ActionResult<Product> DeleteProduct(int id)
         {
             Product product = _productRepository.GetBy(id);
@@ -80,13 +84,14 @@ namespace TechnoraApi.Controllers
 
 
         [HttpPost("{id}/specifications")]
+        [AllowAnonymous]
         public ActionResult<Specification> PostSpecification(int id, SpecificationDTO specification)
         {
             if (!_productRepository.TryGetProduct(id, out var product))
             {
                 return NotFound();
             }
-            var specificationToCreate = new Specification(specification.description);
+            var specificationToCreate = new Specification(specification.description,specification.Type);
             product.AddSpecification(specificationToCreate);
             _productRepository.SaveChanges();
             return CreatedAtAction("GetSpecification", new { id = product.Id, specificationId = specificationToCreate.Id }, specificationToCreate);

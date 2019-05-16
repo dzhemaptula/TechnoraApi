@@ -6,6 +6,7 @@
         public int Id { get; set; }
 
         public string Description { get; set; }
+        public string Type { get; set; }
         #endregion
 
         #region Constructors
@@ -13,6 +14,12 @@
         {
             Description = description;
         }
-        #endregion
+
+        public Specification(string description, string type) : this(description)
+        {
+
+            Type = type;
+        }
     }
+    #endregion
 }

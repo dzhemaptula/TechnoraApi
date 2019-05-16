@@ -7,6 +7,7 @@ namespace TechnoraApi.DTOs
     {
         [Required]
         public string Name { get; set; }
+        public double Price { get; set; }
 
 
         public IList<SpecificationDTO> Specifications { get; set; }

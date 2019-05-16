@@ -6,5 +6,6 @@ namespace TechnoraApi.DTOs
     {
         [Required]
         public string description { get; set; }
+        public string Type { get; set; }
     }
 }

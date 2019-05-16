@@ -12,6 +12,8 @@ namespace TechnoraApi.Models
 
         [Required]
         public string Name { get; set; }
+        [Required]
+        public double Price { get; set; }
 
         public DateTime Created { get; set; }
          
@@ -25,9 +27,10 @@ namespace TechnoraApi.Models
             Created = DateTime.Now;
         }
 
-        public Product(string name) : this()
+        public Product(string name, double price) : this()
         {
             Name = name;
+            Price = price;
         }
         #endregion
 
